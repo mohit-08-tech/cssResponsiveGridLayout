@@ -20,9 +20,10 @@ body{
     display: grid; /*Setting container to display as grid*/
     grid-auto-rows: 150px;  /*Each row will be of 150px*/
     grid-gap: 5px; /*grid gap to add similar gap between rows and columns*/
-    
-    /*Now this line will help to make the grid columns responsive*/
-    grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); /*repeat to add same width columns
+
+    /*Now this line will help to make the grid columns responsive using minmax property of grid*/
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); 
+    /*repeat to add same property to all columns
     auto-fit will collapse the empty space
     minmax property (min width is 140px and max width 1fr will take remaining area automatic)
     */
